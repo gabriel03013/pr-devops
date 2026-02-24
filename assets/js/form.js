@@ -18,5 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         addEx(newEx);
         alert("Sua ex foi adicionada com sucesso!");
+        location.reload()
     })
 })
