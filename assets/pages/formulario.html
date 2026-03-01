@@ -4,81 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD - My Ex relationship</title>
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/forms.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Projeto de Pull Request</h1>
-    </header>
-
-    <form id="form">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite o nome da sua Ex namorada(o)">
+    <div class="container">
+        <header>
+            <h1>Bem-vindo ao Projeto de Pull Request</h1>
+        </header>
+        <h1>Inserir Ex</h1>
+        <form id="form">
         
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" placeholder="Digite a idade dela(o)">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome da sua Ex namorada(o)">
+            </div>
         
-        <label for="telefone">Telefone:</label>
-        <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+            <div class="campo">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite a idade dela(o)">
+            </div>
         
-        <label for="crc-mais-bonita">Característica mais bonita:</label>
-        <input type="text" id="crc-mais-bonita" name="crc-mais-bonita" placeholder="Característica mais bonita">
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+            </div>
         
-        <label for="paixao-restante">Paixão restante:</label>
-        <input type="number" id="paixao-restante" name="paixao-restante" placeholder="% de paixão restante">
-
-        <label for="data-inicio">Data de início:</label>
-        <input type="date" id="data-inicio" name="data-inicio">
-
-        <label for="data-termino">Data de término:</label>
-        <input type="date" id="data-termino" name="data-termino">
-
-        <button type="submit">Enviar</button>
-    </form>
-
-    <br><br>
-    <table border="1" id="exTable">
-        <thead>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Telefone</th>
-            <th>Característica mais bonita</th>
-            <th>Data de início</th>
-            <th>Data de término</th>
-        </thead>
-
-        <tbody>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tbody>
-    </table>
-    
-    <footer>
-        <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
-    </footer>
+            <div class="campo">
+                <label for="crc-mais-bonita">Característica mais bonita:</label>
+                <input type="text" id="crc-mais-bonita" name="crc-mais-bonita" placeholder="Característica mais bonita">
+            </div>
+        
+            <div class="campo">
+                <label for="paixao-restante">Paixão restante:</label>
+                <input type="number" id="paixao-restante" name="paixao-restante" placeholder="De 1 a 100 de paixão restante">
+            </div>
+            <div class="campo">
+                <label for="data-inicio">Data de início:</label>
+                <input type="date" id="data-inicio" name="data-inicio">
+            </div>
+            <div class="campo">
+                <label for="data-termino">Data de término:</label>
+                <input type="date" id="data-termino" name="data-termino">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <h1>Ver Ex(s)</h1>
+        <table border="1" id="exTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Telefone</th>
+                    <th>Característica mais bonita</th>
+                    <th>Paixão Restante</th>
+                    <th>Data de início</th>
+                    <th>Data de término</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+        <footer>
+            <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
+        </footer>
 </body>
 </html>

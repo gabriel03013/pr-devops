@@ -1,0 +1,140 @@
+/* reset, import e font */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #577C8E;
+    background-color: #F4EFEB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: min(100% - 2rem, 900px);
+    margin-inline: auto;
+}
+
+/* Header */
+header {
+    width: min(100% - 2rem, 900px);
+    margin: clamp(1rem, 3vw, 2rem) auto;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    background-color: #577C8E;
+    color: #fff;
+    text-align: center;
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    border-radius: 10px;
+}
+
+/* main */
+
+#form {
+    width: min(100% - 2rem, 900px);
+    margin: clamp(1.5rem, 4vw, 2.5rem) auto;
+    padding: clamp(1rem, 4vw, 2rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: clamp(0.8rem, 2vw, 1.2rem);
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+#form input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.campo:has(#nome) {
+    grid-column: 1 / -1;
+}
+
+.campo:has(#nome) input {
+    max-width: 700px;
+    align-self: center;
+}
+
+#nome::placeholder {
+    color: #577c8e8c;
+}
+
+
+button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, 400px);
+    padding: 0.9rem;
+    background-color: #577C8E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(105, 145, 163);
+    transform: scale(1.03);
+}
+
+/* TABLE */
+
+table {
+    width: min(100% - 2rem, 900px);
+    margin: clamp(2rem, 4vw, 3rem) auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    overflow-x: auto; 
+}
+
+th {
+    background-color: #577C8E;
+    color: white;
+    padding: clamp(0.6rem, 2vw, 1rem);
+    text-align: left;
+    white-space: nowrap;
+}
+
+td {
+    padding: clamp(0.6rem, 2vw, 1rem);
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #577C8E;
+    color: white;
+    text-align: center;
+    padding: clamp(0.8rem, 2vw, 1rem);
+}
