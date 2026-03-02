@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         idadeCell.textContent = ex.idade.toString();
         telefoneCell.textContent = ex.telefone;
         caracteristicaMaisBonitaCell.textContent = ex.caracteristicaMaisBonita;
-        paixaoRestanteCell.textContent = ex.paixaoRestante.toString();
+        paixaoRestanteCell.textContent = `${ex.paixaoRestante.toString()}%`;
         dtInicioCell.textContent = new Date(ex.dtInicio).toLocaleDateString();
         dtFimCell.textContent = new Date(ex.dtFim).toLocaleDateString();
     })
