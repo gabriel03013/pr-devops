@@ -1,0 +1,123 @@
+/* reset, import  e font */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #fff;  
+    min-height: 100vh;
+    background-color: #2F4157;
+    background-attachment: fixed; 
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 1.2rem auto;   
+    padding: 1.5rem;
+    background-color: #577C8E;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+/* Main */
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center; 
+    align-items: center;    
+    justify-content: center;
+    align-content: center;
+}
+
+main section {
+    color: #000;
+    width: 100%;
+    height: 100%;
+    background-color: #F4EFEB;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main section:nth-of-type(1){
+    grid-column: 1 / -1;
+    background-color: #F4EFEB;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 895px;
+}
+
+
+main a:not(#ex) {
+    background-color: #577C8E;
+    font-size: 1.2rem;
+    color: white;
+    padding: 20px 60px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    grid-column: 1 / -1;
+    justify-self: center;
+    text-decoration: none;
+}
+
+main a:hover:not(#ex) {
+    transform: scale(1.05);
+    background-color: #74a3ba;
+}
+
+li{
+    margin: 5px;
+    text-align: center;
+    list-style: none;
+}
+
+#ex{
+    display: inline-block;
+    color: #2F4157;
+    text-decoration: none;
+    font-weight: 900;
+    transition: 0.3s ease;
+}
+
+#ex:hover {
+    color: #577C8E;
+    transform: scale(1.2);
+}
+
+main section:nth-of-type(2) li:nth-last-child(1) {
+    color: red;
+}
+/* Footer */
+footer {
+    background-color: #577C8E;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
